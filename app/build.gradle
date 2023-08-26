@@ -5,6 +5,7 @@ plugins {
     id 'androidx.navigation.safeargs'
     //For the annotations
     id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -37,6 +38,7 @@ android {
 
     buildFeatures {
         viewBinding = true
+        dataBinding =true
     }
 }
 
@@ -67,4 +69,11 @@ dependencies {
 
     //Roundable Layout
     implementation 'com.github.zladnrms:RoundableLayout:1.1.4'
+
+    //Lottie
+    implementation 'com.airbnb.android:lottie:6.1.0'
+
+    //Hilt
+    implementation 'com.google.dagger:hilt-android:2.47'
+    kapt 'com.google.dagger:hilt-compiler:2.47'
 }

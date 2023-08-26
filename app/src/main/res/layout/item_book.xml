@@ -1,63 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.tistory.zladnrms.roundablelayout.RoundableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_margin="@dimen/_10sdp"
-    app:strokeLineWidth="@dimen/_1sdp"
-    app:strokeLineColor="@color/md_theme_light_primary"
-    android:elevation="@dimen/_10sdp"
-    app:cornerAll="@dimen/_10sdp">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <ImageView
-        android:id="@+id/iv_book"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/_150sdp"
-        android:layout_marginHorizontal="@dimen/_40sdp"
-        android:layout_marginTop="@dimen/_20sdp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"
-        app:srcCompat="@drawable/ic_launcher_background" />
+    <data>
 
-    <TextView
-        android:id="@+id/tv_name"
+    </data>
+
+    <com.tistory.zladnrms.roundablelayout.RoundableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:text="Title"
-        android:lines="3"
-        android:paddingHorizontal="@dimen/_5sdp"
-        android:textAlignment="center"
-        android:textSize="@dimen/_16ssp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/tv_price"
-        app:layout_constraintEnd_toEndOf="@+id/iv_book"
-        app:layout_constraintStart_toStartOf="@+id/iv_book"
-        app:layout_constraintTop_toBottomOf="@+id/iv_book" />
+        android:layout_margin="@dimen/_10sdp"
+        app:strokeLineWidth="@dimen/_1sdp"
+        app:strokeLineColor="@color/md_theme_light_primary"
+        android:elevation="@dimen/_10sdp"
+        app:cornerAll="@dimen/_10sdp">
 
-    <TextView
-        android:id="@+id/tv_price"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:layout_marginBottom="@dimen/_10sdp"
-        android:text="Price"
-        android:textSize="@dimen/_14ssp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/tv_name"
-        app:layout_constraintStart_toStartOf="@+id/tv_name"
-        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+        <ImageView
+            android:id="@+id/iv_book"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginHorizontal="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:srcCompat="@drawable/ic_launcher_background" />
 
-    <ImageView
-        android:id="@+id/book_icon"
-        android:layout_width="@dimen/_25sdp"
-        android:layout_height="@dimen/_25sdp"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="@+id/iv_book"
-        app:layout_constraintTop_toTopOf="@+id/iv_book"
-        app:srcCompat="@drawable/top" />
-</com.tistory.zladnrms.roundablelayout.RoundableLayout>
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            tools:text="Title"
+            android:lines="3"
+            android:paddingHorizontal="@dimen/_5sdp"
+            android:textAlignment="center"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tv_price"
+            app:layout_constraintEnd_toEndOf="@+id/iv_book"
+            app:layout_constraintStart_toStartOf="@+id/iv_book"
+            app:layout_constraintTop_toBottomOf="@+id/iv_book" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            tools:text="Price"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tv_name"
+            app:layout_constraintStart_toStartOf="@+id/tv_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        <ImageView
+            android:id="@+id/book_icon"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="@+id/iv_book"
+            app:layout_constraintTop_toTopOf="@+id/iv_book"
+            tools:srcCompat="@drawable/top" />
+    </com.tistory.zladnrms.roundablelayout.RoundableLayout>
+</layout>
